@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(){
+    int matriz[2][2];
+    int i, j;
+    
+    printf("Digite 4 numeros para preenchera matriz 2x2: ");
+    
+    for (i = 0; i < 2; i++){
+        for (j = 0; j < 2; j++){
+            printf("posicao [0][0]: ", i, j);
+            scanf("%d", &matriz[i][j]);
+        }
+    }
+    
+    for (i = 0; i < 2; i++){
+        for (j = 0; j < 2; j++){
+            printf("%d", matriz[i][j]);
+        }
+        printf("%n");
+    }
+    
+         
+    return 0;
+    }
